@@ -1,0 +1,35 @@
+logging:
+  level:
+    org.springframework.web.servlet.handler.HandlerMappingIntrospector: error
+
+spring:
+  datasource:
+    hikari:
+      driver-class-name: org.h2.Driver
+      auto-commit: false
+      maximum-pool-size: 10
+      jdbc-url: "jdbc:h2:mem:tuto"
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+        hbm2ddl:
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+s3:
+  client:
+    accessKeyId: tutoy
+    secretAccessKey: tutoy
+    endpoint: http://localhost:4572
+
+  bucket:
+    temp: temp
+    main: main
+    thumbnail: thumbnail
+
+

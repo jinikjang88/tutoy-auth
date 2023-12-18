@@ -1,0 +1,13 @@
+###
+GET http://localhost:8080/some/path
+# Response code: 401; Time: 7ms (7 ms); Content length: 0 bytes (0 B)
+
+###
+GET http://localhost:8080/some/path
+Authorization: Basic user f692a04a-44c2-4135-ac55-75ebb4d753a1
+# {
+#  "timestamp": "2023-11-24T01:02:15.240+00:00",
+#  "status": 404,
+#  "error": "Not Found",
+#  "path": "/some/path"
+# }
