@@ -20,7 +20,9 @@ spring:
     console:
       enabled: true
       path: /h2-console
-
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
 s3:
   client:
     accessKeyId: tutoy

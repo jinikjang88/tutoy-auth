@@ -12,7 +12,7 @@ public class FileStoreUtil {
 
   public static String createTempPath(final String name) {
     String extension = FilenameUtils.getExtension(name);
-    return TEMP_DIR + FILE_SEPARATOR + UUID.randomUUID().toString() + "." + extension;
+    return TEMP_DIR + FILE_SEPARATOR + UUID.randomUUID() + "." + extension;
   }
 
 }
